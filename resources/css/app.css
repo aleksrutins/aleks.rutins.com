@@ -1,4 +1,4 @@
-@import url(https://fonts.bunny.net/css?family=figtree:400,900);
+@import url(https://fonts.bunny.net/css?family=figtree:400,700,900);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,16 +8,16 @@
         transform: rotate(0);
     }
 
-    15% {
-        transform: rotate(45deg);
+    25% {
+        transform: rotate(0.25turn);
     }
 
-    40% {
+    50% {
         transform: rotate(0);
     }
 
     75% {
-        transform: rotate(45deg);
+        transform: rotate(0.25turn);
     }
 
     100% {
@@ -26,5 +26,5 @@
 }
 
 span.wave {
-    animation: wave 1s linear .5s 1;
+    animation-name: wave 2s 1;
 }
