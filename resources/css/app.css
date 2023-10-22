@@ -1,0 +1,30 @@
+@import url(https://fonts.bunny.net/css?family=figtree:400,900);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes wave {
+    0% {
+        transform: rotate(0);
+    }
+
+    15% {
+        transform: rotate(45deg);
+    }
+
+    40% {
+        transform: rotate(0);
+    }
+
+    75% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+span.wave {
+    animation: wave 1s linear .5s 1;
+}
