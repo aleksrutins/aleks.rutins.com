@@ -1,7 +1,10 @@
 baseURL = 'https://aleks.rutins.com/'
 languageCode = 'en-us'
 title = 'Aleks Rūtiņš'
-theme = 'terminal'
+theme = 'aleksrutins'
+
+[language]
+    lang = "en-US"
 
 [params]
-    themeColor = 'green'
+    authorName = 'Aleks Rūtiņš'
