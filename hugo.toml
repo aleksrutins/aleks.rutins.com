@@ -1,0 +1,7 @@
+baseURL = 'https://aleks.rutins.com/'
+languageCode = 'en-us'
+title = 'Aleks Rūtiņš'
+theme = 'terminal'
+
+[params]
+    themeColor = 'green'
