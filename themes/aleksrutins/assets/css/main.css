@@ -1,21 +1,19 @@
-body {
-    color: #222;
-    background-color: #ffeedd;
+@import url(https://fonts.bunny.net/css?family=besley:400,700|inter:300,700);
 
-    font-family: sans-serif;
+body {
+    color: var(--dark5);
+    background-color: var(--light2);
+
+    font-family: "Inter", sans-serif;
     line-height: 1.5;
-    margin: 1rem;
+    margin: auto;
+    padding: 1rem;
     max-width: 768px;
 }
 
 header {
     border-bottom: 1px solid #222;
     margin-bottom: 1rem;
-}
-
-header h1,
-header nav {
-    display: inline;
 }
 
 header ul {
@@ -44,8 +42,12 @@ footer {
 }
 
 a {
-    color: #00e;
+    color: var(--primary-color);
     text-decoration: none;
+}
+
+article {
+    font-family: Besley, sans-serif;
 }
 
 article img {
@@ -69,18 +71,16 @@ article img {
     }
 }
 
-@media (max-width: 450px) {
-    header h1,
-    header nav {
-        display: block;
-        text-align: center;
-    }
+header h1,
+header nav {
+    display: block;
+    text-align: center;
+}
 
-    header h1 {
-        margin-bottom: 5px;
-    }
+header h1 {
+    margin-bottom: 5px;
+}
 
-    header nav ul {
-        padding: 0;
-    }
+header nav ul {
+    padding: 0;
 }
