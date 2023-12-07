@@ -1,8 +1,0 @@
-{{ define "main" }}
-  <article>
-    {{ .Content }}
-  </article>
-  {{ range site.RegularPages }}
-    {{ partial "post-preview.html" . }}
-  {{ end }}
-{{ end }}
