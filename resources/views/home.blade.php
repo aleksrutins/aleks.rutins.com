@@ -26,5 +26,20 @@
         <span class="hover:text-gray-700 transition">C</span>,
         and similar technologies.
     </h2>
+
+    <section id="projects">
+        <h3 class="text-xl font-black pt-6 pb-3">Featured Projects</h3>
+        <div class="flex flex-row flex-wrap gap-3">
+            <x-project-card title="Harknology" url="https://harknology.farthergate.com" github-repo="aleksrutins/harknology" style="flex-basis: 0; flex: 1 1 0">
+                Harknology is a platform for managing class discussions.
+            </x-project-card>
+            <x-project-card title="Dynamite" url="https://dynamite.farthergate.com" github-repo="aleksrutins/dynamite" style="flex-basis: 0; flex: 1 1 0">
+                Dynamite is a FOSS LV2-based distortion plugin meant to work with Ardour.
+            </x-project-card>
+            <x-project-card title="Butterfly" url="https://butterfly.farthergate.com" github-repo="aleksrutins/butterfly" style="flex-basis: 0; flex: 1 1 0">
+                Dead simple database access for NodeJS.
+            </x-project-card>
+        </div>
+    </section>
 </div>
 @endsection
