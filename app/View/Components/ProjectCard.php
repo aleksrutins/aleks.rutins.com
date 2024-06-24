@@ -9,17 +9,18 @@ use Facades\App\Services\Langley;
 
 class ProjectCard extends Component
 {
-    public array $languages;
+    public array|null $languages = null;
     /**
      * Create a new component instance.
      */
     public function __construct(
         public string $title,
         public string $url,
-        public string $githubRepo
-    )
-    {
-        $this->languages = array_keys(Langley::getLanguages($githubRepo));
+        public ?string $githubRepo = null
+    ) {
+        if ($githubRepo) {
+            $this->languages = Langley::getLanguages($githubRepo);
+        }
     }
 
     /**
@@ -27,6 +28,6 @@ class ProjectCard extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.project-card');
+        return view("components.project-card");
     }
 }

@@ -30,7 +30,7 @@
     <section id="projects">
         <h3 class="text-xl font-black pt-6 pb-3">Featured Projects</h3>
         <div class="flex flex-row flex-wrap gap-3">
-            <x-project-card title="Harknology" url="https://harknology.farthergate.com" github-repo="aleksrutins/harknology" style="flex-basis: 0; flex: 1 1 0">
+            <x-project-card title="Harknology" url="https://harknology.farthergate.com" style="flex-basis: 0; flex: 1 1 0">
                 Harknology is a platform for managing class discussions.
             </x-project-card>
             <x-project-card title="Dynamite" url="https://dynamite.farthergate.com" github-repo="aleksrutins/dynamite" style="flex-basis: 0; flex: 1 1 0">

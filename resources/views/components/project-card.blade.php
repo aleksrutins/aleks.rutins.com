@@ -9,10 +9,12 @@
         <p>
             {{ $slot }}
         </p>
-        <div class="flex flex-row gap-3 mt-2">
-            @foreach ($languages as $language)
-                <x-language-indicator :language="$language"/>
-            @endforeach
-        </div>
+        @if(isset($githubRepo))
+            <div class="flex flex-row gap-3 mt-2">
+                @foreach ($languages as $language)
+                    <x-language-indicator :language="$language"/>
+                @endforeach
+            </div>
+        @endif
     </div>
 </x-card>
